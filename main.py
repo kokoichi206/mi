@@ -1,5 +1,7 @@
 import time
 import csv
+
+
 class Board(object):
 	# オブジェクト内の関数の第一引数は必ずself！
 	def __init__(self):
@@ -307,6 +309,7 @@ class Board(object):
 			elif lis[0] == 8:
 				for i in range(lis[1]):
 					self.board[x-1-i][y-1-i] = which_turn
+
 
 if __name__ == '__main__':
 	whether_record = input('do u wanna record?:(y/n)')	
